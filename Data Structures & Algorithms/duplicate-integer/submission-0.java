@@ -1,0 +1,15 @@
+class Solution {
+    public boolean hasDuplicate(int[] nums) {
+        int x= nums.length;
+        for(int i=0;i<x;i++){
+            for(int j=i+1;j<x;j++){
+                if(nums[i]==nums[j]){
+                    return true;
+                    
+                }
+            }
+        }
+        return false;
+    }
+    
+}
